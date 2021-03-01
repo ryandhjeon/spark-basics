@@ -21,18 +21,18 @@ Yarn log command:
 
 `yarn logs -applicationId application_1614374698785_0627`
 
-### Pagerank
+### pi
 
 Client command:
-`spark-submit --deploy-mode client /home/hadoop/spark/examples/src/main/python/queue_stream.py hdfs:///user/djeon/data/AFINN-111.csv > ./output_task2_2.txt`
+`spark-submit --deploy-mode client /home/hadoop/spark/examples/src/main/python/pi.py > ./output_task2_pi.txt`
 
 Cluster command: 
 
-`spark-submit --deploy-mode cluster /home/hadoop/spark/examples/src/main/python/wordcount.py hdfs:///user/djeon/data/romeojuliet.txt`
+`spark-submit --deploy-mode cluster /home/hadoop/spark/examples/src/main/python/pi.py`
 
 Yarn log command: 
 
-`yarn logs -applicationId application_1614374698785_0627`
+`yarn logs -applicationId application_1614374698785_0715`
 
 ---
 
