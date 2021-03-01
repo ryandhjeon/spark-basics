@@ -11,7 +11,7 @@ import sys
 spark = SparkSession.builder.appName('walmart').getOrCreate()
 
 ## Load the Walmart data
-df = spark.read.csv('hdfs:///user/djeon/R06/data/SP_500_Historical.csv', inferSchema=True, header=True)
+df = spark.read.csv('hdfs:///user/djeon/data/SP_500_Historical.csv', inferSchema=True, header=True)
 df.columns
 df.head()
 df.printSchema()

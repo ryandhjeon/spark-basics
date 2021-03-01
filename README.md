@@ -4,9 +4,8 @@ __What commands must be used to run your scripts? Which Spark examples did you r
 
 ### Task1 
 
-Local hadoop command
-
-`python3 task1.py -r hadoop hdfs:///user/djeon/data/ > output_task1.txt`
+Client command:
+`spark-submit --deploy-mode client task1.py hdfs:///user/djeon/data/SP_500_Historical.csv.txt > ./output/output_task1_client.txt`
 
 ### WordCount
 
